@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anthony | Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Poppins', 'Segoe UI', Arial;background:#ffffff;color:#1e293b;overflow-x:hidden}
+    
+    /* NAVBAR KACA KAYA CANVA */
+    .navbar{
+      position:fixed;width:100%;background:rgba(255,255,255,0.7);
+      backdrop-filter: blur(12px);padding:20px;display:flex;justify-content:center;gap:40px;z-index:100
+    }
+    .navbar a{color:#334155;text-decoration:none;font-weight:600;transition:0.3s}
+    .navbar a:hover{color:#6366f1}
+    
+    /* HERO SECTION KAYA TEMPLATE CANVA */
+    .hero{
+      min-height:100vh;display:flex;align-items:center;justify-content:center;
+      background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 50%, #a5b4fc 100%);
+      position:relative;overflow:hidden;padding:20px
+    }
+    /* BENTUK ABSTRAK KAYA DI CANVA */
+    .shape{
+      position:absolute;border-radius:50%;background:rgba(99,102,241,0.1)
+    }
+    .shape1{width:400px;height:400px;top:-100px;left:-100px}
+    .shape2{width:300px;height:300px;bottom:-50px;right:-50px;background:rgba(139,92,246,0.1)}
+    
+    .hero-content{text-align:center;z-index:10;max-width:700px}
+    .hero h1{font-size:56px;color:#4338ca;margin-bottom:15px;font-weight:800}
+    .hero h2{font-size:24px;color:#4f46e5;margin-bottom:20px;font-weight:600}
+    .hero p{font-size:18px;color:#475569;margin-bottom:30px}
+    
+    /* TOMBOL GRADIENT KAYA CANVA */
+    .btn{
+      background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+      color:white;padding:16px 40px;border-radius:12px;text-decoration:none;
+      font-weight:bold;display:inline-block;margin:10px;transition:0.3s;
+      box-shadow:0 8px 25px rgba(99,102,241,0.4)
+    }
+    .btn:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(99,102,241,0.5)}
+    
+    /* CARD KAYA CANVA */
+    .card-section{padding:80px 20px;background:white}
+    .container{max-width:1000px;margin:0 auto}
+    .card{
+      background:white;padding:30px;border-radius:20px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.08);margin:20px 0;
+      border:1px solid #e2e8f0
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Beranda</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="portofolio.html">Portofolio</a>
+    <a href="kontak.html">Kontak</a>
+  </div>
+
+  <!-- SECTION 1: HERO KAYA CANVA -->
+  <div class="hero">
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="hero-content">
+      <h1>ANTHONY</h1>
+      <h2>Customer Service & Administrasi</h2>
+      <p>Memberikan solusi terbaik dengan pelayanan profesional, ramah, dan berintegritas tinggi</p>
+      <a href="portofolio.html" class="btn">Lihat Karya Saya</a>
+      <a href="kontak.html" class="btn" style="background:white;color:#6366f1">Hubungi Saya</a>
+    </div>
+  </div>
+
+  <!-- SECTION 2: CARD KAYA CANVA -->
+  <div class="card-section">
+    <div class="container">
+      <div class="card">
+        <h3 style="color:#6366f1;margin-bottom:10px">Kenapa Memilih Saya?</h3>
+        <p>Saya adalah fresh graduate yang disiplin, cepat belajar, dan memiliki komunikasi yang sangat baik. Siap berkontribusi untuk kemajuan perusahaan.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
