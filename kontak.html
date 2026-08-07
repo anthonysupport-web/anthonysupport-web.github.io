@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Anthony</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: 
+                linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)),
+                url('background1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto 30px auto;
+        }
+        .btn-home {
+            background: rgba(102, 126, 234, 0.2);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: 1px solid rgba(102, 126, 234, 0.5);
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        .btn-home:hover { background: #667eea; box-shadow: 0 0 15px #667eea; }
+
+        /* KARTU KONTAK */
+        .contact-card {
+            max-width: 600px;
+            width: 100%;
+            margin: auto; /* biar di tengah */
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            padding: 40px;
+            border: 2px solid rgba(102, 126, 234, 0.5);
+            box-shadow: 0 0 40px rgba(102, 126, 234, 0.4);
+            text-align: center;
+        }
+
+        .contact-card h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px #667eea;
+            letter-spacing: 3px;
+        }
+        .contact-card p.sub { color: rgba(255,255,255,0.7); margin-bottom: 30px; }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            background: rgba(102, 126, 234, 0.15);
+            padding: 15px 20px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s;
+            border-left: 4px solid #667eea;
+        }
+        .contact-item:hover {
+            transform: translateX(10px);
+            background: rgba(102, 126, 234, 0.3);
+        }
+        .contact-item img {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+        }
+        .contact-item .info { text-align: left; }
+        .contact-item .info .label { font-size: 0.9em; color: #a78bfa; }
+        .contact-item .info .value { font-weight: 600; font-size: 1.1em; }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a href="index.html" class="btn-home">← Beranda</a>
+        <a href="index.html"><img src="logo.jpg" alt="Logo" style="width:50px; height:50px; border-radius:50%;"></a>
+    </div>
+
+    <!-- KARTU KONTAK -->
+    <div class="contact-card">
+        <h1>HUBUNGI SAYA</h1>
+        <p class="sub">Mari terhubung dan berkolaborasi 😁</p>
+
+        <!-- EMAIL -->
+        <a href="mailto:anthonysupportweb@gmail.com" class="contact-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+            <div class="info">
+                <div class="label">Email</div>
+                <div class="value">anthony.email@gmail.com</div>
+            </div>
+        </a>
+
+        <!-- WHATSAPP -->
+        <a href="https://wa.me/62812xxxxxxxx" target="_blank" class="contact-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            <div class="info">
+                <div class="label">WhatsApp</div>
+                <div class="value">+62 812-xxxx-xxxx</div>
+            </div>
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a href="https://instagram.com/usernamekamu" target="_blank" class="contact-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+            <div class="info">
+                <div class="label">Instagram</div>
+                <div class="value">@usernamekamu</div>
+            </div>
+        </a>
+
+        <!-- FACEBOOK -->
+        <a href="https://facebook.com/usernamekamu" target="_blank" class="contact-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            <div class="info">
+                <div class="label">Facebook</div>
+                <div class="value">Anthony S</div>
+            </div>
+        </a>
+        
+        <!-- ALAMAT -->
+        <div class="contact-item" style="cursor: default;">
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Lokasi">
+            <div class="info">
+                <div class="label">Lokasi</div>
+                <div class="value">Sumatera Utara, Indonesia</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Anthony | Terima kasih HRD sudah mampir ke portofolio saya ❤️</p>
+    </footer>
+</body>
+</html>
