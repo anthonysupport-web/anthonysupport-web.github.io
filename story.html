@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Story - Perjalanan Saya - ANTHONY</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+    font-family: 'Lora', serif;
+    background: #f1f5f9;
+    color: #2d3748;
+    padding: 20px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fffdf8;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    padding: 40px 30px;
+}
+
+/* HEADER: LOGO KIRI + TOMBOL KAN */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.logo-area {display: flex; align-items: center; gap: 10px;}
+.logo-area img {width: 40px; height: 40px; border-radius: 10px;}
+.logo-area span {font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 20px; color: #1e3a8a;}
+.btn-home {display: flex; align-items: center; gap: 6px; background: #1e40af; color: white; padding: 8px 14px; border-radius: 50px; text-decoration: none; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 13px; transition: 0.3s;}
+.btn-home:hover {background: #2563eb; transform: scale(1.05);}
+.btn-home svg {width: 16px; height: 16px; fill: white;}
+
+/* JUDUL */
+.page-title {text-align: center; margin-bottom: 40px;}
+.page-title h1 {font-family: 'Poppins', sans-serif; font-size: 2.2em; color: #1e3a8a; margin-bottom: 10px;}
+.page-title p {color: #64748b; font-size: 16px;}
+
+/* TIMELINE PERJALAN */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 3px solid #fbbf24; /* GARIS EMAS */
+}
+
+.timeline-item {
+    margin-bottom: 35px;
+    position: relative;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #1e40af; /* TITIK BIRU */
+    border: 3px solid #fbbf24; /* RING EMAS */
+}
+
+.tahun {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    background: #1e40af;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.tahun.aktif {background: #f59e0b; color: #1e3a8a;} /* KUNING BUAT YG LAGI BERJALAN */
+.tahun.gagal {background: #ef4444;} /* MERAH BUAT PENGANGGURAN */
+
+.timeline-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+.timeline-item p {
+    color: #475569;
+    line-height: 1.8;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* QUOTE AKHIR */
+.quote {
+    margin-top: 40px;
+    padding: 20px;
+    background: #eff6ff;
+    border-left: 4px solid #1e40af;
+    border-radius: 8px;
+    font-style: italic;
+    color: #334155;
+}
+.quote span {font-family: 'Poppins', sans-serif; font-weight: 700; color: #1e40af;}
+
+.footer {text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e2e8f0; color: #94a3b8; font-size: 13px;}
+.footer span {color: #1e40af; font-weight: 600;}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="top-header">
+        <div class="logo-area">
+            <img src="logo.png" alt="Logo">
+            <span>ANTHONY</span>
+        </div>
+        <a href="index.html?v=2" class="btn-home">
+            <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            Home
+        </a>
+    </div>
+
+    <!-- JUDUL -->
+    <div class="page-title">
+        <h1>📖 Story Saya</h1>
+        <p>Perjalanan dari nol, jatuh, bangkit, dan belajar</p>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="timeline">
+
+        <!-- ITEM 1 -->
+        <div class="timeline-item">
+            <div class="tahun">2019</div>
+            <h3>Mulai Kerja Pertama</h3>
+            <p>Kerja serabutan sambil belajar komputer di warnet. Dari situlah saya kenal sama desain dan edit video. Gaji pas-pasan tapi semangat tinggi.</p>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="timeline-item">
+            <div class="tahun">2021</div>
+            <h3>Freelance Desain & Edit</h3>
+            <p>Mulai terima job desain poster dan edit video dari temen kampus. Belajar otodidak dari YouTube. Ini masa-masa paling produktif.</p>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="timeline-item">
+            <div class="tahun">2023</div>
+            <h3>Kerja di Agency</h3>
+            <p>Dapet kerja tetap di agency kecil di Siantar. Pegang sosial media + desain. Banyak belajar kerja tim dan deadline.</p>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="timeline-item">
+            <div class="tahun">2025</div>
+            <h3>Resign & Coba Usaha</h3>
+            <p>Mutusin resign buat fokus usaha jualan online. Sayangnya kurang jalan dan modal habis. Dari sini banyak pelajaran.</p>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="timeline-item">
+            <div class="tahun gagal">2026 - Sekarang</div>
+            <h3>Pengangguran & Bangkit Lagi</h3>
+            <p>Sekarang lagi di fase pengangguran. Tapi gak mau diem. Lagi fokus belajar Web Development dan bangun portofolio ini. Targetnya dapet kerja remote / freelance.</p>
+        </div>
+
+    </div>
+
+    <!-- QUOTE -->
+    <div class="quote">
+        "Jatuh itu biasa. Yang luar biasa adalah kita mau bangkit lagi dan mulai dari awal." <br>
+        <span>- ANTHONY</span>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 <span>ANTHONY</span>. All Rights Reserved.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

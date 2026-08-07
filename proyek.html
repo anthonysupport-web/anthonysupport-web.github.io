@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyek - ANTHONY</title>
+
+<!-- FONT PROFESIONAL DARI GOOGLE -->
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+    font-family: 'Lora', serif;
+    background: #e8e8e8;
+    color: #2d3748;
+    padding: 20px 15px;
+}
+
+/* HEADER ATAS: LOGO + TOMBOL */
+.top-bar {
+    max-width: 1100px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+.logo span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1e40af;
+}
+.btn-home {
+    background: #1e40af;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.btn-home:hover {background: #2563eb; transform: translateY(-2px);}
+
+/* CONTAINER UTAMA */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fffdf8;
+    border-radius: 8px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    padding: 50px 40px;
+    border: 1px solid #ddd;
+}
+
+/* JUDUL HALAMAN */
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fbbf24; /* GARIS EMAS */
+}
+.page-header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em; 
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+.page-header p {color: #64748b; font-size: 16px;}
+
+/* GRID PROYEK */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+/* KARTU PROYEK */
+.project-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.15);
+}
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 20px;
+}
+.card-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+.card-content p {
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.card-tags {
+    margin-bottom: 15px;
+}
+.card-tags span {
+    background: #eff6ff; /* BIRU MUDA */
+    color: #1e40af;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.btn-detail {
+    display: inline-block;
+    background: #fbbf24; /* KUNING EMAS */
+    color: #1e3a8a;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.btn-detail:hover {background: #f59e0b;}
+
+/* RESPONSIVE: 2 KOLOM DI TABLET, 3 KOLOM DI PC */
+@media (min-width: 600px) {
+    .project-grid {grid-template-columns: 1fr 1fr;}
+}
+@media (min-width: 900px) {
+    .project-grid {grid-template-columns: 1fr 1fr 1fr;}
+}
+
+/* FOOTER */
+.page-footer {
+    text-align: center; 
+    margin-top: 40px; 
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    color: #94a3b8; 
+    font-size: 13px;
+}
+.page-footer span {color: #1e40af; font-weight: 600;}
+</style>
+</head>
+<body>
+
+<!-- BAR ATAS: LOGO + TOMBOL HOME -->
+<div class="top-bar">
+    <div class="logo">
+        <!-- GANTI logo.png DENGAN LOGO KAMU -->
+        <img src="logo.png" alt="Logo">
+        <span>ANTHONY</span>
+    </div>
+    <a href="index.html?v=2" class="btn-home">🏠 Kembali ke Home</a>
+</div>
+
+<!-- ISI UTAMA -->
+<div class="container">
+
+    <!-- JUDUL -->
+    <div class="page-header">
+        <h1>📁 Portofolio Proyek Saya</h1>
+        <p>Beberapa karya dan proyek yang pernah saya kerjakan</p>
+    </div>
+
+    <!-- GRID PROYEK -->
+    <div class="project-grid">
+
+        <!-- KARTU 1 -->
+        <div class="project-card">
+            <!-- GANTI GAMBAR -->
+            <img src="proyek1.jpg" alt="Website Portofolio">
+            <div class="card-content">
+                <h3>Website Portofolio Pribadi</h3>
+                <p>Website pribadi ini saya buat untuk menampilkan profil, skill, dan karya saya. Dibuat dengan HTML & CSS murni.</p>
+                <div class="card-tags">
+                    <span>HTML</span><span>CSS</span><span>Responsive</span>
+                </div>
+                <a href="#" class="btn-detail">Lihat Detail</a>
+            </div>
+        </div>
+
+        <!-- KARTU 2 -->
+        <div class="project-card">
+            <img src="proyek2.jpg" alt="Desain Poster">
+            <div class="card-content">
+                <h3>Desain Poster Event Kampus</h3>
+                <p>Mendesain poster untuk acara seminar kampus. Konsep modern dengan tipografi yang kuat.</p>
+                <div class="card-tags">
+                    <span>Photoshop</span><span>Desain</span>
+                </div>
+                <a href="#" class="btn-detail">Lihat Detail</a>
+            </div>
+        </div>
+
+        <!-- KARTU 3 -->
+        <div class="project-card">
+            <img src="proyek3.jpg" alt="Video Edit">
+            <div class="card-content">
+                <h3>Video Company Profile</h3>
+                <p>Editing video company profile durasi 2 menit untuk UMKM. Termasuk motion graphic sederhana.</p>
+                <div class="card-tags">
+                    <span>Premiere</span><span>Editing</span>
+                </div>
+                <a href="#" class="btn-detail">Lihat Detail</a>
+            </div>
+        </div>
+
+        <!-- KAMU BISA COPY KARTU DI ATAS BUAT TAMBAH PROYEK BARU -->
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="page-footer">
+        <p>© 2026 <span>ANTHONY</span>. All Rights Reserved.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
