@@ -14,99 +14,44 @@ body {
     padding: 15px;
 }
 
-/* RUNNING TEXT JALAN */
-.running {
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    padding: 12px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-.running-text {
-    display: inline-block;
-    padding-left: 100%;
-    animation: jalan 12s linear infinite;
-    font-weight: 700;
-    white-space: nowrap;
-}
+.running {background: linear-gradient(90deg, #667eea, #764ba2); padding: 12px; border-radius: 12px; margin-bottom: 20px; overflow: hidden; max-width: 800px; margin: 0 auto 20px;}
+.running-text {display: inline-block; padding-left: 100%; animation: jalan 12s linear infinite; font-weight: 700; white-space: nowrap;}
 @keyframes jalan {0% {transform: translateX(0);} 100% {transform: translateX(-100%);}}
 
-/* KOTAK NAMA FLASH */
-.hero {
-    background: rgba(0, 0, 0, 0.6); 
-    border: 2px solid #667eea;
-    border-radius: 20px;
-    padding: 30px 15px;
-    text-align: center;
-    margin-bottom: 25px;
-}
-.hero h1 {
-    font-size: 3em;
-    font-weight: 800;
-    animation: flash 1.5s infinite alternate;
-}
-@keyframes flash {
-    0% {text-shadow: 0 0 5px #fff;} 
-    100% {text-shadow: 0 0 20px #fff, 0 0 30px #764ba2;}
-}
+.hero {background: rgba(0, 0, 0, 0.6); border: 2px solid #667eea; border-radius: 20px; padding: 30px 15px; text-align: center; margin-bottom: 25px; max-width: 800px; margin: 0 auto 25px;}
+.hero h1 {font-size: 3em; font-weight: 800; animation: flash 1.5s infinite alternate;}
+@keyframes flash {0% {text-shadow: 0 0 5px #fff;} 100% {text-shadow: 0 0 20px #fff, 0 0 30px #764ba2;}}
 .hero p {margin-top: 10px; color: #ccc;}
 
-/* 9 TOMBOL */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 30px;
-}
-.btn {
-    display: block;
-    text-align: center;
-    padding: 16px 10px;
-    border-radius: 15px;
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-}
+/* GRID RESPONSIVE */
+.grid {display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 30px; max-width: 800px; margin: 0 auto 30px;}
+.btn {display: block; text-align: center; padding: 16px 10px; border-radius: 15px; text-decoration: none; color: white; font-weight: 700; transition: 0.3s;}
+.btn:hover {transform: translateY(-3px); box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);}
 .btn:last-child {grid-column: span 2;}
 
-/* WARNA TOMBOL */
 .c1 {background: #667eea;} .c2 {background: #10b981;} .c3 {background: #3b82f6;} .c4 {background: #f59e0b;}
 .c5 {background: #ec4899;} .c6 {background: #8b5cf6;} .c7 {background: #06b6d4;} .c8 {background: #ef4444;}
 .c9 {background: #475569;}
 
-/* COPYRIGHT KEREN + KOPI */
-.footer {
-    background: rgba(0, 0, 0, 0.7);
-    border-top: 2px solid #667eea;
-    padding: 20px;
-    text-align: center;
-    border-radius: 15px;
-    margin-top: 20px;
+/* UNTUK LAPTOP/TABLET */
+@media (min-width: 768px) {
+    .grid {grid-template-columns: repeat(4, 1fr);}
+    .btn:last-child {grid-column: span 4;}
+    .hero h1 {font-size: 4em;}
 }
-.footer p {
-    font-size: 14px;
-    color: #a5b4fc;
-    margin: 5px 0;
-    animation: glow 2s ease-in-out infinite alternate;
-}
-@keyframes glow {
-    from {text-shadow: 0 0 5px #667eea;}
-    to {text-shadow: 0 0 15px #764ba2;}
-}
+
+.footer {background: rgba(0, 0, 0, 0.7); border-top: 2px solid #667eea; padding: 20px; text-align: center; border-radius: 15px; margin-top: 20px; max-width: 800px; margin: 20px auto 0;}
+.footer p {font-size: 14px; color: #a5b4fc; margin: 5px 0; animation: glow 2s ease-in-out infinite alternate;}
+@keyframes glow {from {text-shadow: 0 0 5px #667eea;} to {text-shadow: 0 0 15px #764ba2;}}
 .footer span {color: #f472b6; font-weight: 700;}
-.kopi {color: #fbbf24; font-weight: 700;} /* WARNA KOPI */
+.kopi {color: #fbbf24; font-weight: 700;}
 </style>
 </head>
 <body>
 
-<div class="running">
-    <div class="running-text">⚡ Teamwork | 📦 Download CV | 💼 Siap Kerja | ⚡</div>
-</div>
+<div class="running"><div class="running-text">⚡ Teamwork | 📦 Download CV | 💼 Siap Kerja | ⚡</div></div>
 
-<div class="hero">
-    <h1>ANTHONY</h1>
-    <p>Multitalenta | Siap Kerja | Jomblo Produktif 😂</p>
-</div>
+<div class="hero"><h1>ANTHONY</h1><p>Multitalenta | Siap Kerja | Jomblo Produktif 😂</p></div>
 
 <div class="grid">
     <a href="tentang-saya.html" class="btn c1">👨‍💼 Tentang</a>
@@ -120,7 +65,6 @@ body {
     <a href="index.html" class="btn c9">🏠 Beranda</a>
 </div>
 
-<!-- COPYRIGHT BARU -->
 <div class="footer">
     <p>© 2026 <span>ANTHONY</span>. All Rights Reserved.</p>
     <p>Dibuat dengan <span class="kopi">☕ secangkir kopi</span> dan semangat 💪</p>
