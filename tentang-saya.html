@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya - Anthony</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+            
+            /* BACKGROUND FOTO KAMU */
+            background-image: 
+                linear-gradient(rgba(10, 10, 10, 0.82), rgba(10, 10, 10, 0.82)), /* overlay gelap */
+                url('background1.jpg'); /* ini file foto kamu */
+            
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            
+            min-height: 100vh;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        /* LOGO POJOK KAN */
+        .logo {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.8);
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .logo:hover { transform: rotate(360deg); }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto 0 auto; /* kasih jarak dari atas karena ada logo */
+            background: rgba(0, 0, 0, 0.4); /* kotak hitam transparan biar teks kebaca */
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 0 0 10px #667eea;
+        }
+
+        .salam {
+            font-size: 1.15em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+        }
+
+        .keahlian {
+            margin-top: 40px;
+        }
+        .keahlian h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+        .skill-box {
+            background: rgba(102, 126, 234, 0.15);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+        .skill-box h3 {
+            color: #a78bfa;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- LOGO -->
+    <a href="index.html"><img src="logo.jpg" alt="Logo Anthony" class="logo"></a>
+
+    <div class="container">
+        <h1>TENTANG SAYA</h1>
+        
+        <div class="salam">
+            <p>Halo! 👋</p>
+            <br>
+            <p>Perkenalkan, saya <b>Anthony</b>. Senang bisa menyapa kamu di sini 😁</p>
+            <br>
+            <p>Saya orang yang suka belajar hal baru dan terbiasa kerja di lapangan maupun di belakang layar. Buat saya, kerja itu bukan cuma soal beres... tapi juga soal rapi, aman, dan efisien.</p>
+            <br>
+            <p>Dengan pengalaman di beberapa bidang, saya siap bantu perusahaan biar operasionalnya jalan lancar tanpa drama.</p>
+        </div>
+
+        <div class="keahlian">
+            <h2>Keahlian Saya</h2>
+            
+            <div class="skill-box">
+                <h3>⚡ Elektrikal Maintenance</h3>
+                <p>Perawatan, perbaikan, dan pengecekan instalasi listrik. Biar mesin nyala, produksi aman, dan gak ada konslet-konslet club.</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>📑 Administrasi</h3>
+                <p>Pendataan, surat-menyurat, laporan, dan segala hal yang berbau rapih-rapih. Data rapi = kerja tenang.</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>💻 IT Support Operasional</h3>
+                <p>Troubleshooting komputer, jaringan, software, dan bantu tim biar gak panik pas komputer ngadat. IT problem? Panggil aja.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
