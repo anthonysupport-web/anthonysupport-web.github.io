@@ -3,89 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthony | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <title>Portofolio - Anthony</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            position: relative;
             font-family: 'Poppins', sans-serif;
-            background: #0a0a0a;
-            background-image: 
-                radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 80% 50%, rgba(255, 119, 198, 0.3) 0%, transparent 50%);
+            background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)), #0a0a0a;
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             color: white;
-            text-align: center;
-            padding: 20px;
-            overflow: hidden;
-        }
-        
-        /* LOGO POJOK KAN */
-        .logo {
-            position: absolute;
-            top: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 0 20px rgba(102, 126, 234, 0.8);
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-        .logo:hover {
-            transform: rotate(360deg);
+            padding: 15px;
         }
 
-        .container {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(20px);
-            border-radius: 20px;
-            padding: 60px 40px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 0 50px rgba(102, 126, 234, 0.5);
-        }
-        .nama {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 4em;
-            font-weight: 900;
-            margin-bottom: 20px;
-            color: #fff;
-            text-shadow: 0 0 10px #667eea, 0 0 20px #667eea, 0 0 40px #764ba2, 0 0 80px #764ba2;
-            animation: lightning 3s infinite;
-        }
-        @keyframes lightning {
-            0%, 100% { opacity: 1; }
-            5% { opacity: 0.7; }
-            10% { opacity: 1; }
-        }
-        p { font-size: 1.3em; font-weight: 300; margin-bottom: 25px; color: #c9d1ff; }
-        .status {
-            font-size: 0.9em; font-weight: 600; letter-spacing: 4px;
-            padding: 12px 25px;
+        /* NAVBAR */
+        .navbar { display: flex; justify-content: center; align-items: center; max-width: 1200px; margin: 0 auto 15px auto; }
+        .navbar img { width: 50px; height: 50px; border-radius: 50%; border: 2px solid #667eea; }
+
+        /* RUNNING TEXT */
+        .running-text {
+            max-width: 1200px;
+            margin: 0 auto 25px auto;
             background: linear-gradient(90deg, #667eea, #764ba2);
-            border-radius: 50px;
+            color: white;
+            padding: 10px 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(102, 126, 234, 0.4);
+        }
+        .running-text-content {
             display: inline-block;
-            animation: pulse 2s infinite;
+            white-space: nowrap;
+            padding-left: 100%;
+            animation: jalan 18s linear infinite;
+            font-weight: 600;
+            font-size: 1em;
         }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+        @keyframes jalan {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
         }
+
+        /* MAIN CONTENT */
+        .container { max-width: 900px; margin: 0 auto; text-align: center; }
+        .hero-box { padding: 30px 15px; background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(10px); border-radius: 20px; border: 2px solid rgba(102, 126, 234, 0.5); margin-bottom: 30px; }
+        .hero-box h1 { font-family: 'Orbitron', sans-serif; font-size: 2.2em; text-shadow: 0 0 10px #667eea; margin-bottom: 8px; }
+        .hero-box p { font-size: 1em; color: rgba(255,255,255,0.8); margin-bottom: 20px; }
+
+        /* TOMBOL MENU */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .btn-utama {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: all 0.3s;
+        }
+        .btn-utama:hover { transform: translateY(-3px); }
+
+        /* BUKU TAMU */
+        .buku-tamu {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            padding: 20px 15px;
+            border-radius: 20px;
+            border: 2px solid rgba(236, 72, 153, 0.5);
+            text-align: center;
+        }
+        .buku-tamu h2 { color: #f9a8d4; font-size: 1.5em; margin-bottom: 8px; }
+        .buku-tamu p { color: rgba(255,255,255,0.8); margin-bottom: 15px; font-size: 0.9em; }
+        .buku-tamu iframe { border-radius: 12px; width: 100%; height: 500px; border: none; }
+
+        /* FOOTER KOTAK */
+        .footer-box {
+            max-width: 900px;
+            margin: 30px auto 0 auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 2px solid rgba(102, 126, 234, 0.5);
+            text-align: center;
+            box-shadow: 0 0 15px rgba(102, 126, 234, 0.2);
+        }
+        .footer-box p { color: white; font-size: 0.9em; margin: 4px 0; }
+        .footer-kecil { font-size: 0.75em !important; color: rgba(255, 255, 255, 0.6) !important; }
     </style>
 </head>
 <body>
-    <!-- LOGO KAMU -->
-    <img src="logo.jpg" alt="Logo Anthony" class="logo">
 
-    <div class="container">
-        <h1 class="nama">ANTHONY</h1>
-        <p>Ini adalah website portfolio saya</p>
-        <div class="status">SEDANG DALAM TAHAP PENGEMBANGAN</div>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <img src="logo.jpg" alt="Logo">
     </div>
+
+    <!-- RUNNING TEXT -->
+    <div class="running-text">
+        <div class="running-text-content">
+            🔥 Selamat Datang! | 🔧 Elektrikal | 💻 IT Support | 📊 Administrasi | 🤝 Teamwork | 📥 Download CV | 📖 Absen Dulu Ya! 🔥
+        </div>
+    </div>
+
+    <!-- KONTEN UTAMA -->
+    <div class="container">
+        <div class="hero-box">
+            <h1>ANTHONY</h1>
+            <p>Multitalenta | Siap Kerja | Jomblo Produktif 😂</p>
+        </div>
+
+        <!-- 9 TOMBOL MENU -->
+        <div class="menu-grid">
+            <a href="tentang-saya.html" class="btn-utama" style="background: linear-gradient(135deg, #667eea, #764ba2);">👨‍💼 Tentang</a>
+            <a href="proyek.html" class="btn-utama" style="background: linear-gradient(135deg, #10b981, #059669);">📁 Proyek</a>
+            <a href="cerita.html" class="btn-utama" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">📖 Cerita</a>
+            <a href="kebersamaan.html" class="btn-utama" style="background: linear-gradient(135deg, #f59e0b, #d97706);">🤝 Tim</a>
+            <a href="hiburan.html" class="btn-utama" style="background: linear-gradient(135deg, #ec4899, #db2777);">🎮 Hobi</a>
+            <a href="testimoni.html" class="btn-utama" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">⭐ Testimoni</a>
+            <a href="kontak.html" class="btn-utama" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">📞 Kontak</a>
+            <a href="download.html" class="btn-utama" style="background: linear-gradient(135deg, #ef4444, #dc2626);">📄 Download</a>
+            <a href="index.html" class="btn-utama" style="background: linear-gradient(135deg, #64748b, #475569); grid-column: span 2;">🏠 Beranda</a>
+        </div>
+
+        <!-- BUKU TAMU -->
+        <div class="buku-tamu">
+            <h2>📖 BUKU TAMU DIGITAL</h2>
+            <p>Mampir jangan lupa tinggalkan nama ya 🙏</p>
+            
+            <!-- PENTING: GANTI INI PAKE LINK IFRAME GOOGLE FORM KAMU -->
+            <iframe src="LINK_GOOGLE_FORM_KAMU"></iframe>
+        </div>
+
+    </div>
+
+    <!-- FOOTER KOTAK -->
+    <footer>
+        <div class="footer-box">
+            <p>© 2026 Anthony | Dibuat dengan ☕ dan semangat</p>
+            <p class="footer-kecil">All Rights Reserved | Pematangsiantar, Sumatera Utara</p>
+        </div>
+    </footer>
+
 </body>
 </html>
